@@ -6,6 +6,7 @@
     <title>Portfolio | Dominick Maleszewski</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
 </head>
 
 
@@ -28,35 +29,35 @@
             <div class="row">
                 <div class="col-lg">
                     <div class="work">
-                        <img src="assets/images/technics-q-c-640-480-1.jpg" alt="Word Guess">
+                        <img src="assets/images/technics-q-c-640-480-1.jpg" alt="Word Guess" id="word">
 
                         <h3>Word Guess</h3>
                     </div>
                 </div>
                 <div class="col-lg">
                     <div class="work">
-                        <img src="assets/images/technics-q-c-640-480-2.jpg" alt="RPG Game">
+                        <img src="assets/images/technics-q-c-640-480-2.jpg" alt="Gem Game" id="gem">
 
-                        <h3>RPG Game</h3>
+                        <h3>Gem Game</h3>
                     </div>
                 </div>
                 <div class="col-lg">
                     <div class="work">
-                        <img src="assets/images/technics-q-c-640-480-5.jpg" alt="Trivia Game">
+                        <img src="assets/images/technics-q-c-640-480-5.jpg" alt="Trivia Game" id="triv">
 
                         <h3>Trivia Game</h3>
                     </div>
                 </div>
                 <div class="col-lg">
                     <div class="work">
-                        <img src="assets/images/technics-q-c-640-480-7.jpg" alt="Rutgers Info Widget">
+                        <img src="assets/images/technics-q-c-640-480-7.jpg" alt="Fitness Site" id="info">
 
-                        <h3>Rutgers Info Widget</h3>
+                        <h3>Fitness Site</h3>
                     </div>
                 </div>
                 <div class="col-lg">
                     <div class="work">
-                        <img src="assets/images/technics-q-c-640-480-9.jpg" alt="Rock Paper Scissors">
+                        <img src="assets/images/technics-q-c-640-480-9.jpg" alt="Rock Paper Scissors" id="rock">
 
                         <h3>Rock Paper Scissors</h3>
                     </div>
@@ -72,5 +73,22 @@
         </div>
     </footer>
 </body>
+<script>
+    $(document).on("click", "#gem", function() {
+        window.open('https://maleszewskid.github.io/unit-4-game/', '_blank');
+    })
+    $(document).on("click", "#rock", function() {
+        window.open('https://maleszewskid.github.io/RPS-multiplayer/', '_blank');
+    })
+    $(document).on("click", "#word", function() {
+        window.open('https://maleszewskid.github.io/Psychic-Game/', '_blank');
+    })
+    $(document).on("click", "#triv", function() {
+        window.open('https://maleszewskid.github.io/TriviaGame/', '_blank');
+    })
+    $(document).on("click", "#info", function() {
+        window.open('https://erikboerma.github.io/ProjectOne/', '_blank');
+    })
+</script>
 
 </html>

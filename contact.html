@@ -6,6 +6,10 @@
     <title>Contact | Dominick Maleszewski</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-database.js"></script>
+
 </head>
 
 
@@ -41,7 +45,7 @@
                         <textarea id="message" name="message" required="required"></textarea>
                     </li>
                 </ul>
-                <input type="submit">
+                <a href="https://maleszewskid.github.io/Responsive-Portfolio/contact.html" id="submit" type="submit">Submit</a>
             </form>
 
         </section>
@@ -54,5 +58,30 @@
         </div>
     </footer>
 </body>
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyB_u64MjpDHqA7cw3xQ4QCAnnlRvpcLfi8",
+        authDomain: "domm-a7373.firebaseapp.com",
+        databaseURL: "https://domm-a7373.firebaseio.com",
+        projectId: "domm-a7373",
+        storageBucket: "",
+        messagingSenderId: "651633677889",
+        appId: "1:651633677889:web:8731b3f75b269e2c6658c0"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    var database = firebase.database();
+    $(document).on("click", "#submit", function() {
+        var contact = {
+            name: $("#name").val(),
+            email: $("#email").val(),
+            message: $("#message").val()
+        }
+
+        database.ref(contact.name).push(contact)
+    })
+</script>
 
 </html>

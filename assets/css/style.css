@@ -238,7 +238,7 @@
                                         height: 200px;
                                     }
                                     
-                                    input[type=submit] {
+                                    a[type=submit] {
                                         padding: 10px 30px;
                                         font-size: 18px;
                                         color: #ffffff;
