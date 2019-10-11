@@ -45,7 +45,7 @@
                         <textarea id="message" name="message" required="required"></textarea>
                     </li>
                 </ul>
-                <a href="https://maleszewskid.github.io/Responsive-Portfolio/contact.html" id="submit" type="submit">Submit</a>
+                <a id="submit" type="submit">Submit</a>
             </form>
 
         </section>
@@ -80,7 +80,7 @@
             message: $("#message").val()
         }
 
-        database.ref(contact.name).push(contact)
+        database.ref("/emails/" + contact.name).push(contact)
     })
 </script>
 
