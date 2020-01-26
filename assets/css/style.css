@@ -5,19 +5,15 @@
                                         color: #777777;
                                         background: url("../images/concrete_seamless.png");
                                     }
-                                    
                                     * {
                                         box-sizing: border-box;
                                     }
-                                    /* general */
-                                    
                                     .container {
                                         width: 100%;
                                         max-width: 960px;
                                         margin: 0 auto;
                                         clear: both;
                                     }
-                                    
                                     h1,
                                     h2,
                                     h3,
@@ -48,8 +44,6 @@
                                     h3 {
                                         font-size: 22px;
                                     }
-                                    /* header */
-                                    
                                     #masthead {
                                         position: fixed;
                                         z-index: 99;
@@ -60,7 +54,6 @@
                                         background: #ffffff;
                                         border-bottom: 2px solid #cccccc;
                                     }
-                                    
                                     #logo {
                                         float: left;
                                         width: 250px;
@@ -74,12 +67,10 @@
                                         text-decoration: none;
                                         background: #4aaaa5;
                                     }
-                                    
                                     nav {
                                         float: right;
                                         margin-top: 25px;
                                     }
-                                    
                                     nav a {
                                         display: inline-block;
                                         padding-left: 15px;
@@ -89,11 +80,9 @@
                                         text-decoration: none;
                                         border-left: 1px solid #efefef;
                                     }
-                                    
                                     nav a:first-child {
                                         border-left: 0 none;
                                     }
-                                    
                                     @media screen and (max-width: 640px) {
                                         #masthead {
                                             position: static;
@@ -105,8 +94,6 @@
                                             width: 76%;
                                         }
                                     }
-                                    /* footer */
-                                    
                                     footer {
                                         padding: 30px 0;
                                         clear: both;
@@ -118,7 +105,6 @@
                                         border-top: 8px solid #4aaaa5;
                                         height: 50px;
                                     }
-                                    
                                     h3,
                                     h2 {
                                         padding-bottom: 20px;
@@ -126,13 +112,10 @@
                                         line-height: 22px;
                                         border-bottom: 2px solid #eeeeee;
                                     }
-                                    /* main */
-                                    
                                     #main-container {
                                         padding-top: 130px;
                                         min-height: calc(100vh - 70px);
                                     }
-                                    
                                     .main-section {
                                         float: left;
                                         width: 100%;
@@ -142,25 +125,20 @@
                                         background: #ffffff;
                                         border: 1px solid #dddddd;
                                     }
-                                    /* portfolio page */
-                                    
                                     .work {
                                         position: relative;
                                         width: 274px;
                                         margin: 20px 0px 25px;
                                         overflow: auto;
                                     }
-                                    
                                     .work:nth-child(even) {
                                         margin-right: 40px;
                                     }
-                                    
                                     .work img {
                                         width: 100%;
                                         border: 0 none;
                                         opacity: 0.8;
                                     }
-                                    
                                     .work h3 {
                                         position: absolute;
                                         bottom: 20px;
@@ -174,7 +152,6 @@
                                         background: #4aaaa5;
                                         border-bottom: 0;
                                     }
-                                    
                                     .auth-image {
                                         width: 200px;
                                         height: auto;
@@ -182,23 +159,19 @@
                                         margin-right: 25px;
                                         float: left;
                                     }
-                                    
                                     .col-lg {
                                         width: auto;
                                     }
-                                    
                                     @media screen and (max-width: 980px) {
                                         .work {
                                             width: auto;
                                         }
                                     }
-                                    
                                     @media screen and (max-width: 768px) {
                                         .col-lg {
                                             width: auto;
                                         }
                                     }
-                                    
                                     @media screen and (max-width: 640px) {
                                         .work {
                                             width: auto;
@@ -207,16 +180,12 @@
                                             width: 100%;
                                         }
                                     }
-                                    /* contact page */
-                                    
                                     #contact-form ul {
                                         margin-bottom: 20px;
                                     }
-                                    
                                     #contact-form li {
                                         margin-bottom: 10px;
                                     }
-                                    
                                     label,
                                     input[type=text],
                                     input[type=email],
@@ -224,7 +193,6 @@
                                         display: block;
                                         width: 100%;
                                     }
-                                    
                                     input[type=text],
                                     input[type=email],
                                     textarea {
@@ -233,11 +201,9 @@
                                         font-size: 14px;
                                         border: 1px solid #dddddd;
                                     }
-                                    
                                     textarea {
                                         height: 200px;
                                     }
-                                    
                                     a[type=submit] {
                                         padding: 10px 30px;
                                         font-size: 18px;
